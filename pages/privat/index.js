@@ -4,6 +4,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 import Table from '../../components/Table';
 import Link from 'next/link';
+import Head from 'next/head';
 const user = {
   name: 'Tom Cook',
   email: 'tom@example.com',
@@ -27,6 +28,9 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       {/*
         This example requires updating your template:
 
